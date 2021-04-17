@@ -47,7 +47,7 @@ import { setModifierManager, capabilities } from '@ember/modifier';
 */
 export default setModifierManager(
   () => ({
-    capabilities: capabilities(gte('3.22.0') ? '3.22' : '3.13', { disableAutoTracking: true }),
+    capabilities: capabilities('3.22', { disableAutoTracking: true }),
 
     createModifier() {},
 
